@@ -54,7 +54,7 @@ namespace Reporting
                     if (reportStore.Unsold() < 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"Total orders unsold: {reportStore.Unsold()}");
+                        Console.WriteLine($"Total orders unsold: {(reportStore.Unsold() * (-1) ):C}");
                     }
 
                     Console.ResetColor();
